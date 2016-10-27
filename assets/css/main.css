@@ -42,7 +42,15 @@ body{
 	height: 60vh;
 	position: fixed;
 	z-index: 1;
-	pointer-events: none;
+	/*pointer-events: none;*/
+}
+
+.spacer-60{
+	position: relative;
+	float: left;
+	z-index: 2;
+	width: 100%;
+	height: 60vh;
 }
 
 .main-logo-content{
@@ -65,7 +73,7 @@ body{
 	text-align: center;
 }
 
-.main-logo-container h1{
+.main-logo-content h1{
 	color: #ffffff;
 	font-size: 3em;
 	font-weight: 300;
@@ -78,6 +86,7 @@ body{
 }
 
 .body-container{
+	/*margin-top: 60vh;*/
 	background-color: #ffffff;
 	width: 100%;
 	height: 100vh;
