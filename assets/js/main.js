@@ -5,6 +5,7 @@ var image1Pos = $('#image1-container').offset().top;
 var image2Pos = $('#image2-container').offset().top;
 var image3Pos = $('#image3-container').offset().top;
 var image4Pos = $('#image4-container').offset().top;
+var logoWidth = $('.main-logo').width();
 
 function resizeFunction(){
 	windowHeight = window.innerHeight;
@@ -15,9 +16,11 @@ function resizeFunction(){
 	// image3Pos = $('#image3-container').offset().top;
 	// image4Pos = $('#image4-container').offset().top;
 	logoSize();
+	// console.log("hello");
 }
 
 function logoSize(){
+	// console.log(logoWidth);
 	if (logoWidth > 500) {
 		$('.main-logo').attr('src', 'assets/img/logo-800.png');
 	}else if(logoWidth > 400){
@@ -71,16 +74,12 @@ function scrollFunction(){
 // -----------------------------------------------------	DOCUMENT READY		-----------------------------------------------------
 
 $(document).ready(function(){
-	if (windowWidth > 500) {
-		$('.main-logo').attr('src', 'assets/img/logo-800.png');
-	}else{
-		$('.main-logo').attr('src', 'assets/img/logo-500.png');
-	}
+	logoSize();
 
 	$('.spacer-30').css('opacity', '1');
 
-// window.onresize = resizeFunction;
-	$('body').on('resize', resizeFunction);
+window.onresize = resizeFunction;
+	// $('body').on('resize', resizeFunction);
 	$('body').on('scroll', scrollFunction);
 	// window.onscroll = scrollFunction;
 // console.log("works");
