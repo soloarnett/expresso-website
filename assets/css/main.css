@@ -28,6 +28,29 @@ body{
 	/*transform: translateX(-50%);*/
 }
 
+.nav-link{
+	position: relative;
+	padding: 20px 30px;
+	font-weight: 300;
+	font-size: 1em;
+	color: #ffffff;
+}
+
+.nav-link a, .nav-link a:visited, .nav-link a:hover{
+	text-decoration: none;
+	outline: none;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
 .main-container{
 	position: relative;
 	float: left;
