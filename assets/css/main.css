@@ -131,6 +131,10 @@ body{
 	height: 100vh;
 	position: absolute;
 	z-index: 1;
+	-moz-transition:all .3 ease-in;
+    -o-transition:all .3 ease-in;
+    -webkit-transition:all .3 ease-in;
+    transition:all .3 ease-in;
 }
 
 .container-fixed{
@@ -225,9 +229,9 @@ body{
 
 @media(max-width: 800px){
 	*{
-		-moz-transition: height 999999999999s ease-in;
-	    -o-transition: height 999999999999s ease-in;
-	    -webkit-transition: height 999999999999s ease-in;
-	    transition: height 999999999999s ease-in;
+		-moz-transition: height 999999999999s ease-in !important;
+	    -o-transition: height 999999999999s ease-in !important;
+	    -webkit-transition: height 999999999999s ease-in !important;
+	    transition: height 999999999999s ease-in !important;
 	}
 }
