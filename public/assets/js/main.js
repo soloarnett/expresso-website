@@ -74,6 +74,7 @@ function scrollFunction(){
 // -----------------------------------------------------	DOCUMENT READY		-----------------------------------------------------
 
 $(document).ready(function(){
+	window.location = "https://expressoapps.com/";
 	logoSize();
 
 	$('.spacer-30').css('opacity', '1');
