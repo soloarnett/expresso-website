@@ -70,6 +70,10 @@ function scrollFunction(){
 
 }
 
+function isAndroid(){
+	return /Android/i.test(navigator.userAgent);
+}
+
 
 // -----------------------------------------------------	DOCUMENT READY		-----------------------------------------------------
 
