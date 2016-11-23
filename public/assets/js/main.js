@@ -70,19 +70,23 @@
 
 // }
 
-function isAndroid(){
-	return /Android/i.test(navigator.userAgent);
-}
+// function isAndroid(){
+// 	return /Android/i.test(navigator.userAgent);
+// }
 
 
 // -----------------------------------------------------	DOCUMENT READY		-----------------------------------------------------
 
 $(document).ready(function(){
-	window.location = "https://expressoapps.com/";
-	// logoSize();
+	window.location = "https://expressoapps.com";
+// 	logoSize();
 
 // 	$('.spacer-30').css('opacity', '1');
 
 // window.onresize = resizeFunction;
+// 	// $('body').on('resize', resizeFunction);
 // 	$('body').on('scroll', scrollFunction);
+	// window.onscroll = scrollFunction;
+// console.log("works");
+
 });
